@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Oswald:wght@700&family=Poppins:wght@200;400;600&display=swap");
+body {
+  background-color: red;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  align-content: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.boxes {
+  width: 400px;
+  background-color: salmon;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  column-gap: 10px;
+  justify-items: center;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: grey;
+  border: 1px solid #dfdddd;
+  border-radius: 7px;
+}
+
+.card__one {
+  grid-column: 1/1;
+  grid-row: 2/ span 2;
+}
+
+.card__one--border1 {
+  border-top: 3px solid #549ef2;
+}
+
+.card__two {
+  grid-column: 2/2;
+  grid-row: 1/ span 2;
+}
+
+.card__two--border2 {
+  border-top: 3px solid #ea5353;
+}
+
+.card__three {
+  grid-column: 2/2;
+  grid-row: 3/ span 4;
+}
+
+.card__three--border3 {
+  border-top: 3px solid #fcaf4a;
+}
+
+.card__four {
+  grid-column: 3/3;
+  grid-row: 2/ span 2;
+}
+
+.card__four--border4 {
+  border-top: 3px solid #45d3d3;
+}
